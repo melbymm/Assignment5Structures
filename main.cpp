@@ -318,12 +318,13 @@ int main(int argc, char** argv){
         }
       }
       else if (input == "14"){
-        t->finalprintstud(t->root);
-        b->finalprintfac(b->root);
-      /*  cout << "Students: " << endl;
-        t->printTreeStud(t->root);
-        cout  << "Faculty: " << endl;
-        b->printTreeFac(b->root);*/
+        cout << "Students: " << endl;
+         t->printTreeStud(t->root);
+         cout  << "Faculty: " << endl;
+         b->printTreeFac(b->root);
+        //t->finalprintstud(t->root);
+        //b->finalprintfac(b->root);
+      /* */
 
         exit(1);
       }

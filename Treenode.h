@@ -66,7 +66,7 @@ public:
   V getPerson(int num);
   string finalprintfac(TreeNode<V> *node);
   string finalprintstud(TreeNode<V> *node);
-  std:: ofstream ofs;
+  ofstream ofs;
 };
 template<class V>
 BST<V>::BST(){
@@ -88,9 +88,7 @@ void BST<V>::printTreeStud(TreeNode<V> *node){
 }
 template<class V>
 void BST<V>::printTreeFac(TreeNode<V> *node){
-  if(node == NULL){
-    return;
-  }
+  
   printTreeFac(node->left);
   cout << node->key << endl;
   cout << node->people->name << endl;
@@ -98,7 +96,7 @@ void BST<V>::printTreeFac(TreeNode<V> *node){
   cout << node->people->depart << endl;
   printTreeFac(node->right);
 }
-
+/*
 template<class V>
 string BST<V>::finalprintstud(TreeNode<V> *node){
   string temp ;
@@ -115,7 +113,8 @@ string BST<V>::finalprintstud(TreeNode<V> *node){
 
   return temp;
 
-}
+}*/
+/*
 template<class V>
 string BST<V>::finalprintfac(TreeNode<V> *node){
   string temp ;
@@ -129,7 +128,7 @@ string BST<V>::finalprintfac(TreeNode<V> *node){
   ofs.close();
 
   return temp;
-}
+}*/
 template<class V>
 void BST<V>::printStud(int idnumber){
   TreeNode<V> *current = root;
